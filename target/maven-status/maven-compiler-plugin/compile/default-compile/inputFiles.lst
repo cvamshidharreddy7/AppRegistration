@@ -1,0 +1,13 @@
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/controller/RegistrationController.java
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/controller/LoginController.java
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/dao/UserDaoImpl.java
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/services/UserServiceImpl.java
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/dao/UserDao.java
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/ValidateUser/ValidateUser.java
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/model/User.java
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/services/UserService.java
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/controller/ResetPasswordController.java
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/model/Login.java
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/controller/WelcomeController.java
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/services/MailService.java
+/home/bridgelabz/workspace/AppRegistration/src/main/java/com/jda/user/controller/ForgotPasswordController.java

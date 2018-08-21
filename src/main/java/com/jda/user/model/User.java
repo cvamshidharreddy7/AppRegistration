@@ -14,7 +14,13 @@ private String firstname;
 private String lastname;
 private String email;
 private String phone;
-
+private String token;
+public String getToken() {
+	return token;
+}
+public void setToken(String token) {
+	this.token = token;
+}
 public User() {
 	super();
 	// TODO Auto-generated constructor stub
@@ -64,6 +70,7 @@ public String toString() {
 	return "User [username=" + username + ", password=" + password + ", firstname=" + firstname + ", lastname="
 	      + lastname + ", email=" + email + ", phone=" + phone + "]";
 }
+
 
 
 }

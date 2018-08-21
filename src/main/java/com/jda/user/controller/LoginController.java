@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,7 +34,9 @@ public class LoginController
 	  @ModelAttribute("login") Login login) throws IOException {
 	    ModelAndView mav = null;
 	    User user = userService.validateUser(login);
-	    if (null != user) {
+	    if (null != user) {BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder(11);
+   	 if(passwordEncoder.matches(login.getPassword(),user.getPassword()))
+   	 {
 	   	/* 
 	   	 HttpSession session = request.getSession();
 	   	 session.setAttribute("name", user.getFirstname());
@@ -44,7 +47,7 @@ public class LoginController
 	   	 session.setAttribute("firstname", user.getFirstname());
 	    mav = new ModelAndView("redirect:/welcome");
 	    
-	    } else {
+	    } }else {
 	    mav = new ModelAndView("login");
 	    mav.addObject("message", "Username or Password is wrong!!");
 	    }
